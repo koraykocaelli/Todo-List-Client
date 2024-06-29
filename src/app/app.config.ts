@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
-import { routes } from './app.routes';  // Bu dosyanın mevcut olduğundan emin olun
+import { routes } from './app.routes';  
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

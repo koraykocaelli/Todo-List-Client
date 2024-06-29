@@ -7,7 +7,7 @@ export interface Todo {
   text: string;
   completed: boolean;
   category?: string;
-  tags?: string[]; // tags özelliğini string[] olarak tanımlayın
+  tags?: string[]; 
 }
 
 @Injectable({

@@ -44,7 +44,7 @@ export class TodoListComponent implements OnInit {
     if (this.newTodo.text?.trim()) {
       const todoToCreate: Partial<Todo> = {
         ...this.newTodo,
-        tags: this.tagsInput.split(',').map(tag => tag.trim())  // tagsInput'ı diziye dönüştürüyoruz
+        tags: this.tagsInput.split(',').map(tag => tag.trim())  
       };
 
       this.todoService.createTodo(todoToCreate).subscribe(
