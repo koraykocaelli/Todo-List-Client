@@ -1,0 +1,56 @@
+.todo-list {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 1em;
+  background-color: #28293d;
+  border-radius: 8px;
+  color: #ffffff;
+}
+
+.todo-list h2 {
+  text-align: center;
+  color: #ff9800;
+}
+
+.todo-list form {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1em;
+}
+
+.todo-list input {
+  padding: 0.5em;
+  margin-bottom: 0.5em;
+  border: 1px solid #444;
+  border-radius: 4px;
+  background-color: #1e1e2f;
+  color: #ffffff;
+}
+
+.todo-list button {
+  padding: 0.75em;
+  border: none;
+  border-radius: 4px;
+  background-color: #ff9800;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.todo-list button:hover {
+  background-color: #e68900;
+}
+
+.progress-bar {
+  width: 100%;
+  background-color: #f3f3f3;
+  border-radius: 5px;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+
+.progress {
+  height: 20px;
+  background-color: #4caf50;
+  transition: width 0.5s ease-in-out;
+}

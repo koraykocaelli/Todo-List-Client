@@ -1,0 +1,13 @@
+<div class="todo-list">
+  <h2>Your Todos</h2>
+  <form (ngSubmit)="addTodo()">
+    <input [(ngModel)]="newTodo.text" name="text" placeholder="New todo" required>
+    <input [(ngModel)]="newTodo.category" name="category" placeholder="Category">
+    <input [(ngModel)]="tagsInput" name="tags" placeholder="Tags (comma separated)">
+    <button type="submit">Add</button>
+  </form>
+  <div class="progress-bar">
+    <div class="progress" [style.width.%]="completionRate"></div>
+  </div>
+  <app-todo-item *ngFor="let todo of todos" [todo]="todo" (todoUpdated)="loadTodos()" (todoDeleted)="loadTodos()"></app-todo-item>
+</div>
